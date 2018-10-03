@@ -1,9 +1,34 @@
 package excercises;
 
-public class TwelveInts {
+public class TwelveInts 
+{
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	public static void main(String[] args) 
+	{
+		int[] numArrays = {1,2,3,4,5,6,7,8,9,10,11,12};
+		int total = 0;
+		String[] stringArray = {"This ", "is ", "a", " string", " array."};
+		System.out.println("Print numbers first to last");
+		
+		for(int i = 0; i < numArrays.length; i++) 
+		{
+			System.out.println("numbers in order " +numArrays[i]);
+			
+		}
+		System.out.println("Print numbers last to first");
+		for (int j = 11; j >= 0; j--) 
+		{
+			System.out.println("numbers in reverse order " + numArrays[j]);
+		}
+		for(int y = 0; y < numArrays.length; y = y + 1) 
+		{
+		System.out.println(numArrays[y]);
+		total = total + numArrays[y];
+		}
+		System.out.println("Total: " + total);
+		for(int z = 0; z<stringArray.length; z++) {
+			System.out.print(stringArray[z]);
+		}
 
 	}
 
